@@ -1,5 +1,6 @@
 ﻿using RestaurantOnline.DatabaseContext;
 using RestaurantOnline.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace RestaurantOnline.OrdersRepository
 {
@@ -17,18 +18,11 @@ namespace RestaurantOnline.OrdersRepository
             throw new NotImplementedException();
         }
 
-        public MenuPosition GetMenu()
+        public List<MenuPosition> GetMenu()
 		{
-			var test = _context;
-			
-			return new MenuPosition()
-			{
-				Id = Guid.NewGuid(),
-				Name = "Cesar Salat",
-				Description = "Classic position for all lovers of salats",
-				Price = 24.5
-			};
-		}
+            var query = _context.MenuPosition;
+            return query.ToList();
+        }
 
         public bool PlaceOrder(Guid id)
         {
