@@ -19,5 +19,5 @@ namespace RestaurantOnline.Controllers
 		{
 			return Ok(_ordersRepository.GetMenu().Description);
 		}
-	}
+    }
 }
