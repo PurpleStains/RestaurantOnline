@@ -4,7 +4,7 @@ namespace RestaurantOnline.OrdersRepository
 {
 	public interface IOrdersRepository
 	{
-		MenuModel GetMenu();
+		MenuPosition GetMenu();
 
 	}
 }

@@ -1,4 +1,4 @@
-﻿using RestaurantOnline.DbContext;
+﻿using RestaurantOnline.DatabaseContext;
 using RestaurantOnline.Models;
 
 namespace RestaurantOnline.OrdersRepository
@@ -12,10 +12,10 @@ namespace RestaurantOnline.OrdersRepository
 			_context = context;
 		}
 
-		public MenuModel GetMenu()
+		public MenuPosition GetMenu()
 		{
 			var test = _context;
-			return new MenuModel()
+			return new MenuPosition()
 			{
 				Id = Guid.NewGuid(),
 				Name = "Cesar Salat",
