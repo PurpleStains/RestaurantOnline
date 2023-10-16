@@ -32,3 +32,37 @@ C:\LocalRepository\Studia\Tworzenie backandu\RestaurantOnline\RestaurantOnline\o
 C:\LocalRepository\Studia\Tworzenie backandu\RestaurantOnline\RestaurantOnline\obj\Debug\net6.0\ref\RestaurantOnline.dll
 C:\LocalRepository\Studia\Tworzenie backandu\RestaurantOnline\RestaurantOnline\bin\Debug\net6.0\Autofac.dll
 C:\LocalRepository\Studia\Tworzenie backandu\RestaurantOnline\RestaurantOnline\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\bin\Debug\net6.0\appsettings.Development.json
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\bin\Debug\net6.0\appsettings.json
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\bin\Debug\net6.0\RestaurantOnline.exe
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\bin\Debug\net6.0\RestaurantOnline.deps.json
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\bin\Debug\net6.0\RestaurantOnline.runtimeconfig.json
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\bin\Debug\net6.0\RestaurantOnline.dll
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\bin\Debug\net6.0\RestaurantOnline.pdb
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\bin\Debug\net6.0\Autofac.dll
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\bin\Debug\net6.0\Autofac.Extensions.DependencyInjection.dll
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\bin\Debug\net6.0\Microsoft.OpenApi.dll
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\bin\Debug\net6.0\Swashbuckle.AspNetCore.Swagger.dll
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerGen.dll
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\bin\Debug\net6.0\Swashbuckle.AspNetCore.SwaggerUI.dll
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\obj\Debug\net6.0\RestaurantOnline.csproj.AssemblyReference.cache
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\obj\Debug\net6.0\RestaurantOnline.GeneratedMSBuildEditorConfig.editorconfig
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\obj\Debug\net6.0\RestaurantOnline.AssemblyInfoInputs.cache
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\obj\Debug\net6.0\RestaurantOnline.AssemblyInfo.cs
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\obj\Debug\net6.0\RestaurantOnline.csproj.CoreCompileInputs.cache
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\obj\Debug\net6.0\RestaurantOnline.MvcApplicationPartsAssemblyInfo.cs
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\obj\Debug\net6.0\RestaurantOnline.MvcApplicationPartsAssemblyInfo.cache
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\obj\Debug\net6.0\staticwebassets\msbuild.RestaurantOnline.Microsoft.AspNetCore.StaticWebAssets.props
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\obj\Debug\net6.0\staticwebassets\msbuild.build.RestaurantOnline.props
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\obj\Debug\net6.0\staticwebassets\msbuild.buildMultiTargeting.RestaurantOnline.props
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\obj\Debug\net6.0\staticwebassets\msbuild.buildTransitive.RestaurantOnline.props
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\obj\Debug\net6.0\staticwebassets.pack.json
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\obj\Debug\net6.0\staticwebassets.build.json
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\obj\Debug\net6.0\staticwebassets.development.json
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\obj\Debug\net6.0\scopedcss\bundle\RestaurantOnline.styles.css
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\obj\Debug\net6.0\RestaurantOnline.csproj.CopyComplete
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\obj\Debug\net6.0\RestaurantOnline.dll
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\obj\Debug\net6.0\refint\RestaurantOnline.dll
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\obj\Debug\net6.0\RestaurantOnline.pdb
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\obj\Debug\net6.0\RestaurantOnline.genruntimeconfig.cache
+C:\StudiesRepository\RestaurantOnline\RestaurantOnline\obj\Debug\net6.0\ref\RestaurantOnline.dll
