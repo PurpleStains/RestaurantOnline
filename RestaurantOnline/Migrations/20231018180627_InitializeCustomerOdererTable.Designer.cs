@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RestaurantOnline.DatabaseContext;
 
@@ -11,9 +12,11 @@ using RestaurantOnline.DatabaseContext;
 namespace RestaurantOnline.Migrations
 {
     [DbContext(typeof(RestaurantDbContext))]
-    partial class RestaurantDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231018180627_InitializeCustomerOdererTable")]
+    partial class InitializeCustomerOdererTable
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -91,35 +94,35 @@ namespace RestaurantOnline.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("a17df9ec-043c-44a0-aa9e-80f6030a9fc1"),
+                            Id = new Guid("bab6cc0f-fced-4e2a-8a03-7e6a2684e89e"),
                             Description = "Most popular salat on the world",
                             Name = "Cesar Salat",
                             Price = 25.0
                         },
                         new
                         {
-                            Id = new Guid("bdde8990-9eeb-4b0a-bc49-bee6ae144a33"),
+                            Id = new Guid("33f1448f-6246-4b4d-9f47-3e8be9a08cc0"),
                             Description = "Most popular pasta on the world",
                             Name = "Spaghetti",
                             Price = 31.0
                         },
                         new
                         {
-                            Id = new Guid("d6a2037f-1b6c-47af-be5e-51a2d9ca438f"),
+                            Id = new Guid("955ee6ec-9cf4-4471-a00c-7afc012f4c63"),
                             Description = "Simple pasta with eggs, bacon and parmeggiano",
                             Name = "Carbonara",
                             Price = 28.0
                         },
                         new
                         {
-                            Id = new Guid("21996487-287d-4ee1-a44f-b0ef4924f36a"),
+                            Id = new Guid("3d676ee3-40f3-4031-84e7-36b82626218b"),
                             Description = "Soft drink",
                             Name = "Coca-cola",
                             Price = 5.0
                         },
                         new
                         {
-                            Id = new Guid("e263c28f-1f24-4b43-9d2a-8a6b166c63d5"),
+                            Id = new Guid("9bdc292f-5e0e-4aa4-96dd-e4596c9807ab"),
                             Description = "Beer",
                             Name = "Johannes",
                             Price = 7.0

@@ -8,6 +8,8 @@ namespace RestaurantOnline.DatabaseContext
 		public RestaurantDbContext(DbContextOptions<RestaurantDbContext> options) : base(options) { }
 
 		public DbSet<MenuPosition> MenuPosition { get; set; }
+        public DbSet<Cart> Cart { get; set; }
+        public DbSet<CustomerOrder> CustomerOrder { get; set; }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {

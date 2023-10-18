@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UBv9FhSNQirLmHj3nm2j3RIF9u4SkUX/YsAWGn8dzSPFwnFkQ4DDwLPgk2RyoycZvvekCylc4ZpGWpTvyjacDw==",
+  "dgSpecHash": "rrEv+OLkl3LcI0RMOCuTAbH089d47tF8E6/dwSVNn1F1Jp1RYXVW4IhblV+RZtD1wHpoIYGN2ffMJqvY1847yw==",
   "success": true,
   "projectFilePath": "C:\\StudiesRepository\\RestaurantOnline\\RestaurantOnline\\RestaurantOnline.csproj",
   "expectedPackageFiles": [
@@ -8,6 +8,7 @@
     "C:\\Users\\Sew-Iwo\\.nuget\\packages\\autofac.extensions.dependencyinjection\\8.0.0\\autofac.extensions.dependencyinjection.8.0.0.nupkg.sha512",
     "C:\\Users\\Sew-Iwo\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Sew-Iwo\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
+    "C:\\Users\\Sew-Iwo\\.nuget\\packages\\fluentresults\\3.15.2\\fluentresults.3.15.2.nupkg.sha512",
     "C:\\Users\\Sew-Iwo\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\Sew-Iwo\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
     "C:\\Users\\Sew-Iwo\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",

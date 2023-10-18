@@ -3,6 +3,7 @@ using System;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 using RestaurantOnline.DatabaseContext;
 
@@ -11,9 +12,11 @@ using RestaurantOnline.DatabaseContext;
 namespace RestaurantOnline.Migrations
 {
     [DbContext(typeof(RestaurantDbContext))]
-    partial class RestaurantDbContextModelSnapshot : ModelSnapshot
+    [Migration("20231018171750_InitializeCartInDatabase")]
+    partial class InitializeCartInDatabase
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -31,34 +34,6 @@ namespace RestaurantOnline.Migrations
                     b.HasKey("Id");
 
                     b.ToTable("Cart");
-                });
-
-            modelBuilder.Entity("RestaurantOnline.Models.CustomerOrder", b =>
-                {
-                    b.Property<Guid>("Id")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<Guid>("CartId")
-                        .HasColumnType("uniqueidentifier");
-
-                    b.Property<string>("City")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("ClientName")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Phone")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.Property<string>("Street")
-                        .HasColumnType("nvarchar(max)");
-
-                    b.HasKey("Id");
-
-                    b.HasIndex("CartId");
-
-                    b.ToTable("CustomerOrder");
                 });
 
             modelBuilder.Entity("RestaurantOnline.Models.MenuPosition", b =>
@@ -91,50 +66,39 @@ namespace RestaurantOnline.Migrations
                     b.HasData(
                         new
                         {
-                            Id = new Guid("a17df9ec-043c-44a0-aa9e-80f6030a9fc1"),
+                            Id = new Guid("c9bf0f18-9751-43cf-b186-37ca5f95ec31"),
                             Description = "Most popular salat on the world",
                             Name = "Cesar Salat",
                             Price = 25.0
                         },
                         new
                         {
-                            Id = new Guid("bdde8990-9eeb-4b0a-bc49-bee6ae144a33"),
+                            Id = new Guid("13757aac-0114-4f18-b8ed-f5c934d81326"),
                             Description = "Most popular pasta on the world",
                             Name = "Spaghetti",
                             Price = 31.0
                         },
                         new
                         {
-                            Id = new Guid("d6a2037f-1b6c-47af-be5e-51a2d9ca438f"),
+                            Id = new Guid("f41ff707-8f33-4e1b-88b2-2991e7ab84a4"),
                             Description = "Simple pasta with eggs, bacon and parmeggiano",
                             Name = "Carbonara",
                             Price = 28.0
                         },
                         new
                         {
-                            Id = new Guid("21996487-287d-4ee1-a44f-b0ef4924f36a"),
+                            Id = new Guid("e3ab842b-87f8-4ff2-ab7a-0fb9378484b8"),
                             Description = "Soft drink",
                             Name = "Coca-cola",
                             Price = 5.0
                         },
                         new
                         {
-                            Id = new Guid("e263c28f-1f24-4b43-9d2a-8a6b166c63d5"),
+                            Id = new Guid("0bd92575-4981-4020-8c7f-e539a5937952"),
                             Description = "Beer",
                             Name = "Johannes",
                             Price = 7.0
                         });
-                });
-
-            modelBuilder.Entity("RestaurantOnline.Models.CustomerOrder", b =>
-                {
-                    b.HasOne("RestaurantOnline.Models.Cart", "Cart")
-                        .WithMany()
-                        .HasForeignKey("CartId")
-                        .OnDelete(DeleteBehavior.Cascade)
-                        .IsRequired();
-
-                    b.Navigation("Cart");
                 });
 
             modelBuilder.Entity("RestaurantOnline.Models.MenuPosition", b =>
