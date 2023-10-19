@@ -1,4 +1,6 @@
-public class CustomerOrderRequset
+namespace RestaurantOnline.Controllers.RequestModel;
+
+public class CustomerOrderRequest
 {
     public string? ClientName { get; set; }
     public string? Street { get; set; }

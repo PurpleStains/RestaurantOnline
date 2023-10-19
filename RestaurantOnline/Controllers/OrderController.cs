@@ -1,5 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
-using RestaurantOnline.Models;
+using RestaurantOnline.Controllers.RequestModel;
 using RestaurantOnline.OrdersRepository;
 
 namespace RestaurantOnline.Controllers
@@ -15,14 +15,14 @@ namespace RestaurantOnline.Controllers
         }
 
         [HttpPost("place")]
-        public ActionResult PlaceOrder([FromBody] CustomerOrderRequset order)
+        public ActionResult PlaceOrder([FromBody] CustomerOrderRequest order)
         {
             var result = _ordersRepository.PlaceOrder(order);
             return result.IsFailed ? BadRequest(result.Reasons) : Ok(result.Value);
         }
 
         [HttpGet("get")]
-        public ActionResult PlaceOrder([FromQuery] Guid orderId)
+        public ActionResult GetOrder([FromQuery] Guid orderId)
         {
             var result = _ordersRepository.GetOrder(orderId);
             return result.IsFailed ? BadRequest(result.Reasons) : Ok(result.Value);

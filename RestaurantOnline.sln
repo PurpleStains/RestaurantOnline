@@ -3,7 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.4.33205.214
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestaurantOnline", "RestaurantOnline\RestaurantOnline.csproj", "{0DDF5D17-78B6-4CB0-AF43-886D468D788B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RestaurantOnline", "RestaurantOnline\RestaurantOnline.csproj", "{0DDF5D17-78B6-4CB0-AF43-886D468D788B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RestarantOnlineTest", "RestarantOnlineTest\RestarantOnlineTest.csproj", "{5688B57F-9D7A-4F56-BDDC-1C0D5AEABC73}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -15,6 +17,10 @@ Global
 		{0DDF5D17-78B6-4CB0-AF43-886D468D788B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{0DDF5D17-78B6-4CB0-AF43-886D468D788B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{0DDF5D17-78B6-4CB0-AF43-886D468D788B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5688B57F-9D7A-4F56-BDDC-1C0D5AEABC73}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5688B57F-9D7A-4F56-BDDC-1C0D5AEABC73}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5688B57F-9D7A-4F56-BDDC-1C0D5AEABC73}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5688B57F-9D7A-4F56-BDDC-1C0D5AEABC73}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

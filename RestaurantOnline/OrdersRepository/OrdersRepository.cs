@@ -1,6 +1,6 @@
-﻿using Azure.Core;
-using FluentResults;
+﻿using FluentResults;
 using Microsoft.EntityFrameworkCore;
+using RestaurantOnline.Controllers.RequestModel;
 using RestaurantOnline.DatabaseContext;
 using RestaurantOnline.Models;
 
@@ -52,7 +52,7 @@ namespace RestaurantOnline.OrdersRepository
             return query.ToList();
         }
 
-        public Result<CustomerOrder> PlaceOrder(CustomerOrderRequset request)
+        public Result<CustomerOrder> PlaceOrder(CustomerOrderRequest request)
         {
             var cart = _context.Cart
                 .Include(c => c.ToOrder)

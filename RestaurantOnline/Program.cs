@@ -10,13 +10,13 @@ var builder = WebApplication.CreateBuilder(args);
 builder.Host.UseServiceProviderFactory(new AutofacServiceProviderFactory());
 
 // Register services directly with Autofac here.
+var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
 builder.Host.ConfigureContainer<ContainerBuilder>(builder => 
-	builder.RegisterModule(new AutofacRestaurantModule()));
+builder.RegisterModule(new AutofacRestaurantModule(connectionString)));
 
 
 builder.Services.AddControllers();
-var connectionString = builder.Configuration.GetConnectionString("DefaultConnection");
-builder.Services.AddDbContext<RestaurantDbContext>(options => options.UseSqlServer(connectionString));
+//builder.Services.AddDbContext<RestaurantDbContext>(options => options.UseSqlServer(connectionString));
 
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();

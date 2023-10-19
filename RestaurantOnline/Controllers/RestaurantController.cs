@@ -1,7 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using Newtonsoft.Json;
 using RestaurantOnline.OrdersRepository;
-using System.Text.Json.Serialization;
 
 namespace RestaurantOnline.Controllers
 {
@@ -16,12 +15,12 @@ namespace RestaurantOnline.Controllers
 			_ordersRepository = ordersRepository;
 		}
 
-		[HttpGet("menu")]
-		public ActionResult GetAllPositionsFromMenu()
-		{
-			var result = _ordersRepository.GetMenu();
-			var json = JsonConvert.SerializeObject(result);
-			return Ok(json);
-		}
+        [HttpGet("menu")]
+        public IActionResult GetAllItemsFromMenu()
+        {
+            var result = _ordersRepository.GetMenu();
+            var json = JsonConvert.SerializeObject(result);
+            return Ok(json);
+        }
     }
 }
