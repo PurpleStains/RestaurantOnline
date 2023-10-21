@@ -1,4 +1,5 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using RestaurantOnline.Models;
 using RestaurantOnline.OrdersRepository;
 
 namespace RestaurantOnline.Controllers
@@ -7,9 +8,9 @@ namespace RestaurantOnline.Controllers
     [Route("[controller]")]
     public class CartController : ControllerBase
     {
-        private readonly IOrdersRepository _ordersRepository;
+        private readonly IOrdersRepository<Cart> _ordersRepository;
 
-        public CartController(IOrdersRepository orderRepository)
+        public CartController(IOrdersRepository<Cart> orderRepository)
         {
             _ordersRepository = orderRepository;
         }

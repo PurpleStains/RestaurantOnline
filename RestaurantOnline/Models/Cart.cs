@@ -8,6 +8,6 @@ namespace RestaurantOnline.Models
 
         [Key]
         public Guid Id { get; set; }
-        public ICollection<MenuPosition> ToOrder { get; set; }
+        public List<MenuPosition> ToOrder { get; set; }
     }
 }

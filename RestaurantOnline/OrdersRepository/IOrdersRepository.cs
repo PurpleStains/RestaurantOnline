@@ -4,9 +4,12 @@ using RestaurantOnline.Models;
 
 namespace RestaurantOnline.OrdersRepository
 {
-	public interface IOrdersRepository
+	public interface IOrdersRepository<TEntity> where TEntity : class
 	{
-		List<MenuPosition> GetMenu();
+        Task<TEntity> AddAsync(TEntity entity);
+        Task<bool> SaveAsync(CancellationToken cancellationToken = default);
+        Task<bool> ClearAsync();
+        List<MenuPosition> GetMenu();
         Result<CustomerOrder> PlaceOrder(CustomerOrderRequest request);
 		Result<CustomerOrder> GetOrder(Guid id);
         Result<Cart> AddToCart(Guid cartId, Guid menuItem);

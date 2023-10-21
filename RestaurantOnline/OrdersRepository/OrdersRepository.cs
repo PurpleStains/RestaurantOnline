@@ -6,14 +6,16 @@ using RestaurantOnline.Models;
 
 namespace RestaurantOnline.OrdersRepository
 {
-    public class OrdersRepository : IOrdersRepository
+    public class OrdersRepository<TEntity> : IOrdersRepository<TEntity> where TEntity : class
 	{
 		private readonly RestaurantDbContext _context;
+        private readonly DbSet<TEntity> dbSet;
 
-		public OrdersRepository(RestaurantDbContext context)
-		{
+        public OrdersRepository(RestaurantDbContext context)
+        {
 			_context = context;
-		}
+            dbSet = context.Set<TEntity>();
+        }
 
         public Result<Cart> AddToCart(Guid cartId, Guid menuItem)
         {
@@ -38,6 +40,7 @@ namespace RestaurantOnline.OrdersRepository
         public Result<Cart> CreateCart()
         {
             var cart = new Cart();
+            cart.Id = Guid.NewGuid();
 
             _context.Cart.Add(cart);
 
@@ -87,6 +90,22 @@ namespace RestaurantOnline.OrdersRepository
                 .First(o => o.Id == orderId);
 
             return result is null ? Result.Fail($"Order with id: {orderId} doesn't exist") : Result.Ok(result);
+        }
+
+        public async Task<TEntity> AddAsync(TEntity entity)
+        {
+            await dbSet.AddAsync(entity);
+            return entity;
+        }
+
+        public virtual async Task<bool> SaveAsync(CancellationToken cancellationToken = default)
+            => await _context.SaveChangesAsync(cancellationToken) > -1;
+
+        public async Task<bool> ClearAsync()
+        {
+            foreach (var entity in dbSet)
+                dbSet.Remove(entity);
+            return await _context.SaveChangesAsync() > -1;
         }
     }
 }

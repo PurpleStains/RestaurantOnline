@@ -3,16 +3,9 @@ using RestaurantOnline.Models;
 
 namespace RestaurantOnline.DatabaseContext
 {
-    public interface IRestaurantDbContext
-    {
-        DbSet<MenuPosition> MenuPosition { get; set; }
-        DbSet<Cart> Cart { get; set; }
-        DbSet<CustomerOrder> CustomerOrder { get; set; }
-
-    }
-
-    public class RestaurantDbContext : DbContext, IRestaurantDbContext
+    public class RestaurantDbContext : DbContext
 	{
+        public RestaurantDbContext() { }
 		public RestaurantDbContext(DbContextOptions<RestaurantDbContext> options) : base(options) { }
 
 		public  DbSet<MenuPosition> MenuPosition { get; set; }

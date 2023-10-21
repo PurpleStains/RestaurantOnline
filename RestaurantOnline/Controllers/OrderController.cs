@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using RestaurantOnline.Controllers.RequestModel;
+using RestaurantOnline.Models;
 using RestaurantOnline.OrdersRepository;
 
 namespace RestaurantOnline.Controllers
@@ -8,8 +9,8 @@ namespace RestaurantOnline.Controllers
     [Route("[controller]")]
     public class OrderController : ControllerBase
     {
-        private readonly IOrdersRepository _ordersRepository;
-        public OrderController(IOrdersRepository ordersRepository)
+        private readonly IOrdersRepository<CustomerOrder> _ordersRepository;
+        public OrderController(IOrdersRepository<CustomerOrder> ordersRepository)
         {
             _ordersRepository = ordersRepository;
         }

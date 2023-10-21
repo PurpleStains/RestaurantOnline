@@ -1,12 +1,10 @@
 ﻿using Autofac;
-using Microsoft.AspNetCore.Routing;
 using Microsoft.EntityFrameworkCore;
 using RestaurantOnline.DatabaseContext;
-using RestaurantOnline.OrdersRepository;
 
 namespace RestaurantOnline
 {
-	internal class AutofacRestaurantModule : Module
+    internal class AutofacRestaurantModule : Module
 	{
         private readonly string _databaseConnectionString;
         internal AutofacRestaurantModule(string databaseConnectionString)
@@ -28,13 +26,13 @@ namespace RestaurantOnline
             .As<DbContext>()
             .InstancePerLifetimeScope();
 
-            var infrastructureAssembly = typeof(RestaurantDbContext).Assembly;
+            //var infrastructureAssembly = typeof(RestaurantDbContext).Assembly;
 
-            builder.RegisterAssemblyTypes(infrastructureAssembly)
-                .Where(type => type.Name.EndsWith("Repository"))
-                .AsImplementedInterfaces()
-                .InstancePerLifetimeScope()
-                .FindConstructorsWith(new AllConstructorFinder());
+            //builder.RegisterAssemblyTypes(infrastructureAssembly)
+            //    .Where(type => type.Name.EndsWith("Repository"))
+            //    .AsImplementedInterfaces()
+            //    .InstancePerLifetimeScope()
+            //    .FindConstructorsWith(new AllConstructorFinder());
         }
 	}
 }
